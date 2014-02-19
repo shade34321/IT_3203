@@ -1,0 +1,27 @@
+.eras {
+	list-style-type: upper-roman;
+}
+
+.periods {
+	list-style-type: upper-alpha;
+}
+
+.epoch {
+	list-style-type: decimal;
+}
+
+#proto {
+	background-color: #CC3399;
+}
+
+#paleo {
+	background-color: #3300FF;
+}
+
+#meso {
+	background-color: #00FF00;
+}
+
+#ceno {
+	background-color: #FF0000;
+}

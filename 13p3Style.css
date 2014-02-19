@@ -1,0 +1,18 @@
+table {
+	align: center;
+	float: center;
+	width: 300px;
+	margin: 0 auto;
+	font-family: Verdana, Geneva, Arial, sans-serif;
+}
+.header {
+	background-color: #006600;
+}
+
+.odd {
+	background-color: #33FFFF;
+}
+
+.even {
+	background-color: #66FF99;
+}
