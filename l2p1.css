@@ -1,0 +1,17 @@
+.right {
+	clear: right;
+	alight: left;
+}
+
+.left {
+	clear: left;
+	align: right;
+}
+
+img {
+	align: left;
+}
+
+#middle {
+	align: right;
+}
