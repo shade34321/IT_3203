@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lab 4 Part 1a</title>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="http://webdev.spsu.edu/favicon.ico" type="image/x-icon"  />
+
+		<script>
+			function fibNum(num) {
+				var fib = []
+				fib[0] = 0;
+				fib[1] = 1;
+				var doc = document.getElementById("fibTable");
+				var t;
+				t += "<table>";
+				t += "<tr><td>" + fib[0] + "</td></tr>";
+				t += "<tr><td>" + fib[1] + "</td></tr>";
+
+				for(var i =2;i<=num;i++) {
+					fib[i] = fib[i-2] + fib[i-1];
+					t += "<tr><td>" + fib[i] + "</tr></td>";				
+				}
+				t += "</table>";
+				doc.innerHTML = t;
+			}
+		</script>
+	</head>
+	<body onload="fibNum(20)">
+
+		<div id="fibTable"> 
+
+		</div>
+
+		<p>
+			To produce the first 40 numbers I would just need to change the function call and pass it in the number 40. We use document.write instead of alert so we don't have to click the ok button for the alert X many times since that becomes annoying. Also it allows us to format the text if we want to.
+		</p>
+
+	</body>
+</html>
