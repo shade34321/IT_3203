@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+	Created by Shade Alabsa
+-->
+<html>
+	<head>
+		<title>Lab 4 Part 4</title>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="http://webdev.spsu.edu/favicon.ico" type="image/x-icon"  />
+		<link rel="stylesheet" type="text/css" href="l2p4.css" />
+		<script>
+			function cost{
+				
+				var cost = 0;
+				var tax = 1.08;
+
+				cost = (document.getElementById("rasp").value * 6) + (document.getElementById("straw").value * 5) + document.getElementById("orange").value * 2);
+				cost = cost * tax;
+				
+//				return cost;
+	//			if(confirm('Your order total is ' + cost() + '.\nTo confirm order please hit ok, cancel to quit')){
+		//			document.getElementById("FORM_ID").submit();
+		//		}
+	
+		//		return false;
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Fruit for Sale!</h1>
+		<h2>Price is based on unit weight</h2>
+		<form action="http://webdev.spsu.edu/formtest.php" method="post" onsubmit="return confirm('Your order total is ' + cost() + '.\nTo confirm order please hit ok, cancel to quit')">
+			<table>
+				<tr>
+					<th>Fruit</th>
+					<th>Price per Pound ($/lb)</th>
+					<th>Weight</th>
+					<th>Quantity</th>
+				</tr>
+				<tr>
+					<td>Raspberry</td>
+					<td>$6.00</td>
+					<td>1</td>
+					<td>
+						<input type="text" name="raspQuantity" id="rasp" size="10" />
+					</td>
+				</tr>
+				<tr>
+					<td>Garden Strawberry</td>
+					<td>$5.00</td>
+					<td>1</td>
+					<td>
+						<input type="text" name="stawQuantity" id="straw" size="10" />
+					</td>
+				</tr>
+				<tr>
+					<td>Orange</td>
+					<td>$2.00</td>
+					<td>5</td>
+					<td>
+						<input type="text" name="orangeQuantity" id="orange" size="10" />
+					</td>
+				</tr>
+			</table>
+
+			<divi class="custInfo">
+				<label style="display: inline-block;margin-right: 20px;">First Name
+					<input type="text" id="fname" name="firstName" size="30" />
+				</label>
+				<label>Last Name
+					<input type="text" id="lname" name="lastName" size="30" />
+				</label>
+	
+				<br />			
+	
+				<label>Street Address
+					<input type="text" id="streetAdr" name="streetAddress" size="45" />
+				</label>
+
+				<br  />
+
+				<label style="display: inline-block;margin-right: 20px;">City
+					<input type="text" id="city" name="City" size="30" />
+				</label>
+				<label style="display: inline-block;margin-right: 20px;">State
+					<input type="text" id="state" name="State" size="30" />
+				</label>
+				<label>Zip Code
+					<input type="text" id="zip" name="zipCode" size="10" />
+				</label>
+				
+				<br  />
+				
+				<label>Payment:
+					<br  />
+					<input type="radio" name="radio" name="payment" value="visa" />Visa
+					<input type="radio" name="radio" name="payment" value="master" />Mastercard
+					<input type="radio" name="radio" name="payment" value="discover" />Discover
+					<input type="radio" name="radio" name="payment" value="amex" />American Express
+				</label>
+
+				<br  />
+				<br  />
+				<input type="submit" value="Submit"  />
+			</div>
+		</form>
+	</body>
+</html>
