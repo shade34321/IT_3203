@@ -8,28 +8,35 @@
 		<meta charset="UTF-8">
 		<link rel="shortcut icon" href="http://webdev.spsu.edu/favicon.ico" type="image/x-icon"  />
 		<link rel="stylesheet" type="text/css" href="l2p4.css" />
-		<script>
-			function cost{
+		<script language="Javascript" type="text/javascript">
+			<!--
+				//<![CDATA[
+					function cost() {
+						var cost = 0;
+						var tax = 1.08;
 				
-				var cost = 0;
-				var tax = 1.08;
+						var rasp = document.getElementById("rasp").value * 6;
+						var straw = document.getElementById("straw").value * 5;
+						var orange = document.getElementById("orange").value * 2;
 
-				cost = (document.getElementById("rasp").value * 6) + (document.getElementById("straw").value * 5) + document.getElementById("orange").value * 2);
-				cost = cost * tax;
-				
-//				return cost;
-	//			if(confirm('Your order total is ' + cost() + '.\nTo confirm order please hit ok, cancel to quit')){
-		//			document.getElementById("FORM_ID").submit();
-		//		}
-	
-		//		return false;
-			}
+						cost = Math.round(((rasp+straw+orange) * tax)*100)/100;
+					
+						var c = confirm('Your order total is ' + cost + '.\nTo confirm order please hit ok, cancel to quit');
+
+						if(c == false){
+							return false;
+						}
+						
+						document.getElementById("form").submit();
+					}
+				//]]>
+			//-->
 		</script>
 	</head>
 	<body>
 		<h1>Fruit for Sale!</h1>
 		<h2>Price is based on unit weight</h2>
-		<form action="http://webdev.spsu.edu/formtest.php" method="post" onsubmit="return confirm('Your order total is ' + cost() + '.\nTo confirm order please hit ok, cancel to quit')">
+		<form action="" method="post" id="form" onsubmit="return cost();">
 			<table>
 				<tr>
 					<th>Fruit</th>
@@ -42,7 +49,7 @@
 					<td>$6.00</td>
 					<td>1</td>
 					<td>
-						<input type="text" name="raspQuantity" id="rasp" size="10" />
+						<input type="text" name="rasp" id="rasp" size="10" />
 					</td>
 				</tr>
 				<tr>
@@ -50,7 +57,7 @@
 					<td>$5.00</td>
 					<td>1</td>
 					<td>
-						<input type="text" name="stawQuantity" id="straw" size="10" />
+						<input type="text" name="straw" id="straw" size="10" />
 					</td>
 				</tr>
 				<tr>
@@ -58,7 +65,7 @@
 					<td>$2.00</td>
 					<td>5</td>
 					<td>
-						<input type="text" name="orangeQuantity" id="orange" size="10" />
+						<input type="text" name="orange" id="orange" size="10" />
 					</td>
 				</tr>
 			</table>
