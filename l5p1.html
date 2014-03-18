@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+	Created by Shade Alabsa
+-->
+<html>
+	<head>
+		<title>Lab 5 Part 1</title>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="http://webdev.spsu.edu/favicon.ico" type="image/x-icon"  />
+		<link rel="stylesheet" type="text/css" href="l2p4.css" />
+		<script language="Javascript" type="text/javascript">
+			<!--
+				//<![CDATA[
+					function picturei(pic) {
+						var s = "";
+						var a = "";
+						if(pic ==1){
+							s = "rasp.jpg";
+							a = "Picture of a Raspberry!";
+						} else if (pic == 2) {
+							s = "straw.jpg";
+							a = "Picture of a Strawberry!";
+						} else if (pic == 3) {
+							s = "orange.jpg";
+							a = "Picture of an Orange!";
+						}
+			
+						document.getElementById("fruit").src = s;
+						document.getElementById("fruit").alt = a;
+					}
+				//]]>
+			//-->
+		</script>
+	</head>
+	<body>
+		<form action="" method="post">
+
+		<img src="rasp.jpg" id="fruit" alt="Picture of a Raspberry">
+		
+		<button type="button">Raspberry</button>
+		<button type="button">Strawberry</button>
+		<button type="button">Orange</button>
+		
+		
+		</form>
+
+		<p>
+			I chose to use the visibility method simply because it was simple to implement and use. Overall it does not add much code to your page and at the end of the day the code would have to be put here regardless. You also don't have to worry about the pictures being different sizes either as you do with z-index, i.e. the bottom picture being bigger than the top.
+		</p>
+
+	</body>
+</html>
