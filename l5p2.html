@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+	Created by Shade Alabsa
+-->
+<html>
+	<head>
+		<title>Lab 5 Part 3</title>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="http://webdev.spsu.edu/favicon.ico" type="image/x-icon"  />
+		<script language="Javascript" type="text/javascript">
+			<!--
+				//<![CDATA[
+					var pic = 1;
+					function picture(pic) {
+						var s = "";
+						var a = "";
+						if(pic ==1){
+							s = "raspberries.jpg";
+							a = "Picture of a Raspberry!";
+						} else if (pic == 2) {
+							s = "strawberries.jpg";
+							a = "Picture of a Strawberry!";
+						} else if (pic == 3) {
+							s = "oranges.jpg";
+							a = "Picture of an Orange!";
+						}
+
+						if(pic == 3){
+							pic = 0;
+						}
+			
+						pic++;
+
+						document.getElementById("fruit").src = s;
+						document.getElementById("fruit").alt = a;
+					}
+				//]]>
+			//-->
+		</script>
+	</head>
+	<body>
+		<img src="raspberries.jpg" id="fruit" alt="Picture of a Raspberry" height="267" width="400" style="display: block;margin-left: auto;margin-right: auto;">
+
+		<br  />
+		<div width="400" style="display: block;margin-left: auto;margin-right: auto;text-align: center">	
+			<button type="button" onclick="picture();" style="display: inline-blockblock;margin-left: auto;margin-right: auto;">Next</button>
+		</div>	
+		
+		<p>
+			I chose to use the do this with javascript. When the button is clicked it passes in the variable of which picture to use. This basically makes it easier on me on when I implement the next part. It also allows me to have more concise code.
+		</p>
+
+	</body>
+</html>
