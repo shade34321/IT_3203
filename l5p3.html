@@ -7,7 +7,6 @@
 		<title>Lab 4 Part 4</title>
 		<meta charset="UTF-8">
 		<link rel="shortcut icon" href="http://webdev.spsu.edu/favicon.ico" type="image/x-icon"  />
-		<link rel="stylesheet" type="text/css" href="l2p4.css" />
 		<script language="Javascript" type="text/javascript">
 			<!--
 				//<![CDATA[
@@ -15,6 +14,7 @@
 						var email = document.getElementById("email").value;
 
 						if(!(/\w+@\w+\.[a-zA-Z0-9\.\-]{2}/.test(email))) {
+							alert("The email address you entered is incorrect - " + email);							
 							return false;
 						}
 						
