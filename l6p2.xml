@@ -22,7 +22,7 @@
 		<course_name>Engl 2132 </course_name>
 		<instructor>Terry Carter </instructor>
 		<course_type lab="" lecture="True"> </course_type>
-		<time>1200 </time>
-		<room>J-264 </room>	
+		<time>1200</time>
+		<room>J-264</room>	
 	</courses>
-<catalog>
+</catalog>
