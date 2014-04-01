@@ -1,28 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE courses SYSTEM "http://webdev/spsu.edu/~salabsa/l6p1.dtd">
+<!DOCTYPE catalog SYSTEM "http://webdev.spsu.edu/~salabsa/l6p1.dtd">
 <catalog>
-	<courses>
+	<course>
 		<department>Information Technology </department>
-		<course_name>IT 3203 </course_name>
+		<course_name>Introduction to Web Development</course_name>
+		<course_number>IT 3203</course_number>
 		<instructor>Bob Brown </instructor>
 		<course_type lab="false" lecture="true"> </course_type>
 		<time>1800 </time>
 		<room>J-266 </room>	
-	</courses>
-	<courses>
+	</course>
+	<course>
 		<department>Information Technology </department>
-		<course_name>IT 4323 </course_name>
+		<course_name>Data Communication and Networks</course_name>
+		<course_number>IT 4323</course_number>
 		<instructor>Steve Prettryman </instructor>
 		<course_type lab="true" lecture="false"> </course_type>
 		<time>1500 </time>
 		<room>J-265 </room>	
-	</courses>
-	<courses>
+	</course>
+	<course>
 		<department>English </department>
-		<course_name>Engl 2132 </course_name>
+		<course_name>American Literature Mid 1800's to Present</course_name>
+		<course_number>Engl 2132</course_number>
 		<instructor>Terry Carter </instructor>
-		<course_type lab="" lecture="True"> </course_type>
+		<course_type lab="false" lecture="true"> </course_type>
 		<time>1200</time>
 		<room>J-264</room>	
-	</courses>
+	</course>
 </catalog>
