@@ -12,16 +12,20 @@
 
 #proto {
 	background-color: #CC3399;
+	list-style-position: inside;
 }
 
 #paleo {
 	background-color: #3300FF;
+	list-style-position: inside;
 }
 
 #meso {
 	background-color: #00FF00;
+	list-style-position: inside;
 }
 
 #ceno {
 	background-color: #FF0000;
+	list-style-position: inside;
 }
