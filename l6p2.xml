@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE courses SYSTEM "http://webdev/spsu.edu/~salabsa/l6p1.dtd">
+<catalog>
+	<courses>
+		<department>Information Technology </department>
+		<course_name>IT 3203 </course_name>
+		<instructor>Bob Brown </instructor>
+		<course_type lab="false" lecture="true"> </course_type>
+		<time>1800 </time>
+		<room>J-266 </room>	
+	</courses>
+	<courses>
+		<department>Information Technology </department>
+		<course_name>IT 4323 </course_name>
+		<instructor>Steve Prettryman </instructor>
+		<course_type lab="true" lecture="false"> </course_type>
+		<time>1500 </time>
+		<room>J-265 </room>	
+	</courses>
+	<courses>
+		<department>English </department>
+		<course_name>Engl 2132 </course_name>
+		<instructor>Terry Carter </instructor>
+		<course_type lab="" lecture="True"> </course_type>
+		<time>1200 </time>
+		<room>J-264 </room>	
+	</courses>
+<catalog>

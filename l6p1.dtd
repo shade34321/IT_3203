@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!ELEMENT catalog (couse+)>
+<!ELEMENT course (department, course_name, course_number, instructor, course_type, time, room)>
+<!ELEMENT department (#PCDATA)>
+<!ELEMENT course_name (#PCDATA)>
+<!ELEMENT course_number (#PCDATA)>
+<!ELEMENT instructor (#PCDATA)>
+<!ELEMENT course_type (#PCDATA)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT room (#PCDATA)>
+
+<!ATTLIST course_type lab (true|false) "false">
+<!ATTLIST course_type lecture (true|false) "true">
