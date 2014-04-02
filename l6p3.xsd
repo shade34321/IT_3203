@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<xsd:schema
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified">
+
+	<xsd:element name="catalog">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="department" type="xsd:string"/>
+				<xsd:element name="course_name" type="xsd:string"/>
+				<xsd:element name="course_number" type="xsd:string"/>
+				<xsd:element name="instructor" type="xsd:string"/>
+				<xsd:element name="course_type">
+						<xsd:complexType>
+							<xsd:attribute name="lab" type="xsd:boolean" default="false" />
+							<xsd:attribute name="lecture" type="xsd:boolean" default="true" />
+						</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="time" type="xsd:string"/>
+				<xsd:element name="room" type="xsd:time"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>	
