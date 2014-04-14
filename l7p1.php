@@ -118,7 +118,7 @@
 								/*if($state === "Georgia") {
 									echo "<option selected=\"selected\" value=\"$state\">","$state</option>\n";
 								} else {*/
-									echo "\<option\>", $state, "\<\/option\>\n";
+									echo "\<option\>$state\<\/option\>\n";
 								//}
 							}
 						?>
