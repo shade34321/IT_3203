@@ -15,19 +15,33 @@
 						var rasp = document.getElementById("rasp").value;
 						var straw = document.getElementById("straw").value;
 						var orange = document.getElementById("orange").value;
-
-						var cond = true;						
-
-						if(/^[\w+|\D+|\S+]$/.test(rasp){
-							cond = false;
-						} else if(/^[\w+|\D+|\S+]$/.test(straw){
-							cond = false;
-						} else  if(/^[\w+|\D+|\S+]$/.test(orange){
-							cond = false;
+		
+						if(/\D+/.test(rasp)) {
+							rasp = false;
+						} else if(/\D+/.test(straw)) {
+							straw = false;
+						} else  if(/\D+/.test(orange)) {
+							orange = false;
 						}
 
-						if(cond == false){
-							alert("You entered a non-numeric character for one of the following fields: Raspberry, Strawberry, or Orange. Please fix this and resubmit.");
+						if(rasp == false || straw == false || orange == false) {
+							var msg = "You entered a non-numeric character for one of the following field or fields:";
+
+							if(!rasp) {
+								msg += " Raspbery,";
+							}
+
+							if(!straw) {
+								msg += " Strawberry,";
+							}
+
+							if(!orange) {
+								msg += " Orange,";
+							}
+
+							msg += " please fix this field or fields and resubmit.";
+
+							alert(msg);
 							return false;
 						}
 						
@@ -93,12 +107,27 @@
 				<label style="display: inline-block;margin-right: 20px;">City
 					<input type="text" id="city" name="City" size="30" />
 				</label>
+
+				
 				<label style="display: inline-block;margin-right: 20px;">State
-					<input type="text" id="state" name="State" size="30" />
+					<select id="state" name="State">
+						<?php				
+							$states = array("Alabama", "Florida", "Georgia");
+							
+							foreach ($states as $state) {
+								/*if($state === "Georgia") {
+									echo "<option selected=\"selected\" value=\"$state\">","$state</option>\n";
+								} else {*/
+									echo "\<option\>", $state, "\<\/option\>\n";
+								//}
+							}
+						?>
+					</select>
 				</label>
 				<label>Zip Code
-					<input type="text" id="zip" name="zipCode" size="10" />
+						<input type="text" id="zip" name="zipCode" size="10" />
 				</label>
+
 				
 				<br  />
 				
