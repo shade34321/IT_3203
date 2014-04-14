@@ -115,7 +115,7 @@
 							$states = array("Alabama", "Florida", "Georgia");
 							
 							foreach ($states as $state) {
-									echo '<option>'.$state'</option>';
+									echo '<option>'.$state.'</option>';
 							}
 						?>
 					</select>
