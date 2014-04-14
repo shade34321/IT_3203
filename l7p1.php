@@ -115,11 +115,7 @@
 							$states = array("Alabama", "Florida", "Georgia");
 							
 							foreach ($states as $state) {
-								/*if($state === "Georgia") {
-									echo "<option selected=\"selected\" value=\"$state\">","$state</option>\n";
-								} else {*/
 									echo '<option>'.$state'</option>';
-								//}
 							}
 						?>
 					</select>
