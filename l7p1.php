@@ -109,17 +109,23 @@
 				</label>
 
 				
-				<label style="display: inline-block;margin-right: 20px;">State
-					<select id="state" name="State">
-						<?php				
-							$states = array("Alabama", "Florida", "Georgia");
-							
-							foreach ($states as $state) {
-									echo '<option>'.$state.'</option>';
+				<label style="display: inline-block;margin-right: 20px;">State</label>
+				
+				<select id="state" name="State">
+					<?php				
+						$states = array("Alabama", "Florida", "Georgia");
+						
+						foreach ($states as $state) {
+							if($state == "Georgia") {
+								echo '<option value="'.$state.'" selected="selected">'.$state.'</option>';
+								echo "\n";
+							} else {
+								echo '<option value="'.$state.'">'.$state.'</option>';
+								echo "\n";
 							}
-						?>
-					</select>
-				</label>
+						}
+					?>
+				</select>
 				<label>Zip Code
 						<input type="text" id="zip" name="zipCode" size="10" />
 				</label>
