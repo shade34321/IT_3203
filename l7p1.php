@@ -18,9 +18,13 @@
 		
 						if(/\D+/.test(rasp)) {
 							rasp = false;
-						} else if(/\D+/.test(straw)) {
+						}
+			
+						if(/\D+/.test(straw)) {
 							straw = false;
-						} else  if(/\D+/.test(orange)) {
+						}
+				
+						if(/\D+/.test(orange)) {
 							orange = false;
 						}
 

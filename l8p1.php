@@ -22,7 +22,9 @@
 				</tr>
 				<?php
 					$db=pg_connect("dbname=webdev");
-					$query = "select fruit_item_no, fruit_name, fruit_price, fruit_weight from fruit_t order by fruit_name;"				
+					$query = "select fruit_item_no, fruit_name, fruit_price, fruit_weight";
+					$query .= " from fruit_t order";
+					$query .= " by fruit_name;"				
 					$dbResult = pg_query($query);
 
 					if(!$dbResult){
