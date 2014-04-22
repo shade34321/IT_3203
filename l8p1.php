@@ -21,7 +21,7 @@
 					<th>Quantity</th>
 				</tr>
 				<?php
-					$db=pg_connect("dbname=webdev");
+					$db = pg_connect("dbname=webdev");
 					$query = "select fruit_item_no, fruit_name, fruit_price, fruit_weight";
 					$query .= " from fruit_t order";
 					$query .= " by fruit_name;"				
