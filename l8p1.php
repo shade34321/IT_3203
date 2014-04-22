@@ -4,7 +4,7 @@
 -->
 <html>
 	<head>
-		<title>Lab 7 Part 1</title>
+		<title>Lab 8</title>
 		<meta charset="UTF-8">
 		<link rel="shortcut icon" href="http://webdev.spsu.edu/favicon.ico" type="image/x-icon"  />
 		<link rel="stylesheet" type="text/css" href="l2p4.css" />
@@ -24,7 +24,7 @@
 					$db = pg_connect("dbname=webdev");
 					$query = "select fruit_item_no, fruit_name, fruit_price, fruit_weight";
 					$query .= " from fruit_t order";
-					$query .= " by fruit_name;"				
+					$query .= " by fruit_name;";				
 					$dbResult = pg_query($query);
 
 					if(!$dbResult){
@@ -45,8 +45,8 @@
 						$price = pg_Result($dbResult, $i, 'fruit_price');
 						$weight = pg_Result($dbResult, $i, 'fruit_weight');
 
-						echo '<tr><td>$name</td><td>$price</td><td>$weight</td><td>';
-						echo '<input type="text" name="$fruit_item_no" id="$fruit_item_no" size="10" /></td></tr>';
+						echo '<tr><td>'.$name.'</td><td>'.$price.'</td><td>'.$weight.'.</td><td>';
+						echo '<input type="text" name="'.$fruit_item_no.'" id="'.$fruit_item_no.'" size="10" /></td></tr>';
 						$i++;
 					}
 				?>
@@ -78,7 +78,8 @@
 				<select id="state" name="State">
 					<?php
 						$db=pg_connect("dbname=webdev");
-						$query = "select state_abbr, state_name from state_t order by state_name"				
+						$query = "select state_abbr, state_name from state_t order by state_name";
+
 						$dbResult = pg_query($query);
 
 						if(!$dbResult){
@@ -142,7 +143,7 @@
 		</p>
 
 		<p>Part 5:</p>
-		<p>The small time I was in your course I had no problems with it. I was hoping to learn more PHP than what we did but I know this wasn't meant to be an advanced web programming course and thus basics have to be covered. 
+		<p>The small time I was in your course I had no problems with it. I was hoping to learn more PHP and database driven sites than what we did. I was also hoping to learn more frameworks and the backend of stuff more. I know this wasn't meant to be an advanced web programming course and thus basics have to be covered. 
 			I know you would like a list but overall this was my only complaint which isn't much of one to begin with. Hope you have a great summer!
 		</p>
 	</body>
